@@ -6,5 +6,6 @@ jobs:
   action:
     runs-on: self-hosted
     steps:
+      - run: sudo su
       - run: cp -r ../../ /var/www/html
       
