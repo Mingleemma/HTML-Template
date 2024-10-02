@@ -1,0 +1,10 @@
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  action:
+    runs-on: self-hosted
+    steps:
+      - run: cp . /var/www/html
+      
